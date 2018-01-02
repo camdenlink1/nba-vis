@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import uuidv4 from 'uuid/v4';
 
 class SearchBar extends Component {
 
@@ -15,7 +16,9 @@ class SearchBar extends Component {
       } else {
         this.setState({
           newPlayer: {
-            name: this.refs.name.value
+            name: this.refs.name.value,
+            data: {},
+            uuid: uuidv4()
           }
         }, function() {
           //console.log(this.state);

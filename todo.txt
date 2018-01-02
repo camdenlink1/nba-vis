@@ -1,0 +1,2 @@
+1) empty player is always inserted in to players array -- BUG
+2) figure out how to set data for specific player. player uuid should help with that
